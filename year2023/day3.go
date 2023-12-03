@@ -28,7 +28,7 @@ func Day3Part1() {
 }
 
 func Day3Part2() {
-	input := utils.ReadStringFromFile(2023, 3)
+	input := utils.ReadStringFromTestFile(2023, 3)
 	parseInputDay3(input)
 	acc := 0
 	for p, len := range numbers {
