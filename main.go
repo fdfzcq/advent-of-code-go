@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	year2023.Day2Part2()
+	year2023.Day3Part2()
 }
