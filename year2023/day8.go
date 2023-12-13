@@ -93,11 +93,5 @@ func stepsUntilZs(aNode string, nodesMap nodesMap) int {
 			break
 		}
 	}
-	fmt.Print("A node: ")
-	fmt.Print(aNode)
-	fmt.Print(" steps: ")
-	fmt.Print(steps)
-	fmt.Print(" to Z node: ")
-	fmt.Println(node)
 	return steps
 }
