@@ -28,6 +28,10 @@ func (p Pair) GetA() int {
 	return reflect.ValueOf(p.A).Interface().(int)
 }
 
+func (p Pair) GetAString() string {
+	return reflect.ValueOf(p.A).Interface().(string)
+}
+
 func (p Pair) GetB() int {
 	return reflect.ValueOf(p.B).Interface().(int)
 }
