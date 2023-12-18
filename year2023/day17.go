@@ -22,7 +22,7 @@ type ht struct {
 }
 
 func Day17Part1() {
-	input := utils.ReadStringFromFile(2023, 17)
+	input := utils.ReadStringFromTestFile(2023, 17)
 	grid := utils.ParseGrid(input)
 	queue := []ht{
 		{state: heatstate{
