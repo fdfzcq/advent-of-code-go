@@ -10,6 +10,10 @@ type Pair struct {
 	A, B interface{}
 }
 
+type Tuple struct {
+	X, Y, Z int
+}
+
 func ParseGrid(input string) [][]string {
 	lines := strings.Split(input, "\n")
 	grid := make([][]string, len(lines))
@@ -32,8 +36,20 @@ func (p Pair) GetAString() string {
 	return reflect.ValueOf(p.A).Interface().(string)
 }
 
+func (p Pair) GetATuple() Tuple {
+	return reflect.ValueOf(p.A).Interface().(Tuple)
+}
+
 func (p Pair) GetB() int {
 	return reflect.ValueOf(p.B).Interface().(int)
+}
+
+func (p Pair) GetBTuple() Tuple {
+	return reflect.ValueOf(p.B).Interface().(Tuple)
+}
+
+func (p Pair) GetBList() []int {
+	return reflect.ValueOf(p.B).Interface().([]int)
 }
 
 func Min(a, b int) int {

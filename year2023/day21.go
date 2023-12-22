@@ -153,25 +153,3 @@ func normalise(p utils.Pair, xl int, yl int) utils.Pair {
 	}
 	return utils.Pair{A: newX, B: newY}
 }
-
-// func Day21Part2() {
-// 	input := utils.ReadStringFromFile(2023, 21)
-// 	grid := utils.ParseGrid(input)
-// 	//var s utils.Pair
-// 	mem := make(map[utils.Pair]bool)
-// 	for y := 0; y < len(grid); y++ {
-// 		for x := 0; x < len(grid[0]); x++ {
-// 			if grid[y][x] == "S" {
-// 				s = utils.Pair{A: x, B: y}
-// 				mem[utils.Pair{A: x, B: y}] = false
-// 			} else if grid[y][x] == "." {
-// 				mem[utils.Pair{A: x, B: y}] = false
-// 			}
-// 		}
-// 	}
-// 	// res := 0
-// 	// n = 5000
-// 	// for a := 0; a <= 5000; a++ {
-
-// 	// }
-// }
